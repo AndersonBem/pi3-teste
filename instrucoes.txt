@@ -1,0 +1,60 @@
+INSTRUCOES DO PROJETO
+
+1. GITIGNORE
+Antes de subir o projeto corretamente no GitHub, gerar um .gitignore no site:
+https://www.toptal.com/developers/gitignore
+Sugestão de busca no site:
+Python, Django, VisualStudioCode
+
+2. ESTRUTURA DO PROJETO
+A pasta backend contém a API em Django.
+A pasta frontend contém o front separado com HTML, CSS e JavaScript.
+
+3. QUANDO OUTRA PESSOA BAIXAR O PROJETO DO GITHUB
+Cada integrante precisa criar a própria venv localmente dentro da pasta backend.
+
+Exemplo no PowerShell:
+cd backend
+python -m venv venv
+
+4. ATIVAR A VENV
+No PowerShell:
+.\venv\Scripts\Activate.ps1
+
+5. INSTALAR AS DEPENDENCIAS
+Ainda dentro da pasta backend:
+pip install -r requirements.txt
+
+6. BANCO DE DADOS
+O banco de dados real ainda será definido/configurado pela equipe.
+Antes de começar o desenvolvimento das funcionalidades principais, será necessário:
+
+- escolher o banco que será usado
+- criar o banco
+- configurar as credenciais no projeto
+- ajustar settings.py ou usar variáveis de ambiente
+- definir como será o fluxo de criação das tabelas
+
+7. RODAR O BACKEND
+Depois que o ambiente estiver configurado, o backend pode ser iniciado com:
+python manage.py runserver 7000
+
+8. RODAR O FRONTEND
+A pasta frontend pode ser aberta com Live Server no VS Code, ou outra forma de servidor local.
+
+9. TESTE INICIAL DA API
+Existe um endpoint inicial para teste:
+http://127.0.0.1:7000/api/hello/
+
+10. OBJETIVO DO FRONTEND INICIAL
+O frontend criado serve apenas como ponto de partida para a equipe entender:
+- como separar front e back
+- como fazer requisição para a API
+- como mostrar a resposta na tela
+
+11. PROXIMOS PASSOS RECOMENDADOS
+- definir o banco de dados oficial do projeto
+- modelar as tabelas
+- configurar ambiente com variáveis
+- definir os endpoints principais
+- começar as telas e regras do sistema
